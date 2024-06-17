@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #333;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Center align the title */
+    align-items: center;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Days of the week styles */
+.days-of-week {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.days-of-week ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.days-of-week ul li {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em; /* Larger font size for days */
+    margin: 20px; /* Add more margin between items */
+}
+
+/* Images styles */
+.day-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure each image appears on a new line */
+    margin: 30px auto; /* Center the image with larger space */
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .days-of-week ul {
+        flex-direction: column;
+    }
+
+    .days-of-week ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
