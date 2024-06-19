@@ -1,85 +1,87 @@
-/* General styles */
+/* Global styles */
 body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif; /* Font family for text */
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    padding: 0;
+}
+
+/* Header styles */
+header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin-bottom: 40px; /* Margin between header and main content */
 }
 
-/* Top bar styles */
-.top-bar {
-    background-color: #333;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center; /* Center align the title */
-    align-items: center;
-}
-
-.top-bar h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-/* Days of the week styles */
-.days-of-week {
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.days-of-week ul {
-    list-style: none;
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap */
 }
 
-.days-of-week ul li {
-    flex: 1;
-    text-align: center;
-    font-size: 1.5em; /* Larger font size for days */
-    margin: 20px; /* Add more margin between items */
+nav ul li {
+    margin-left: 30px; /* Space between navigation links */
 }
 
-/* Images styles */
-.day-image {
-    width: 200px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure each image appears on a new line */
-    margin: 30px auto; /* Center the image with larger space */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-/* Content styles */
-.content {
-    padding: 20px;
-    text-align: center;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    min-height: 30vh;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    .top-bar {
-        flex-direction: column;
-        align-items: center;
+/* Image container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 500px; /* Adjust the gap between images */
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 500px;
+    min-height: 150px;
+    transition: none; /* Disable transitions */
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        justify-content: center; /* Center align navigation links */
+        margin-bottom: 10px; /* Reduced margin between header and main content */
     }
 
-    .days-of-week ul {
-        flex-direction: column;
+    nav ul li {
+        margin-left: 10px; /* Reduce space between navigation links */
     }
 
-    .days-of-week ul li {
-        margin: 10px 0;
-    }
-
-    .content {
-        flex-direction: column;
+    .image-container {
+        gap: 10px; /* Adjusted gap between images for smaller screens */
+        padding: 0 10px; /* Adjusted padding around the images */
+        margin-top: 10px; /* Reduced margin above the image container */
     }
 }

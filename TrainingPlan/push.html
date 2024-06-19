@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karol's Training Plan - Push</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .top-bar {
+            text-align: center;
+            margin-bottom: 20px; /* Adjust spacing as needed */
+        }
+
+        .top-bar h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .exercise-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px; /* Adjust spacing as needed */
+        }
+
+        .exercise-group h2 {
+            margin-top: 0; /* Remove default margin */
+            text-align: center; /* Center the title */
+            width: 100%; /* Ensure the title spans the full width */
+        }
+
+        .exercise-group img {
+            width: 300px; /* Set a fixed width */
+            height: 300px; /* Set a fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+            margin: 0 5px; /* Adjust spacing between images */
+        }
+
+        @media (max-width: 800px) {
+            .exercise-group img {
+                width: 200px; /* Adjust width for smaller screens */
+                height: 200px; /* Adjust height for smaller screens */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .top-bar h1 {
+                font-size: 1.5em; /* Adjust font size for smaller screens */
+            }
+            .exercise-group h2 {
+                font-size: 1.2em; /* Adjust font size for smaller screens */
+            }
+            .exercise-group img {
+                width: 150px; /* Adjust width for even smaller screens */
+                height: 150px; /* Adjust height for even smaller screens */
+                margin: 5px 2px; /* Adjust spacing between images */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Karol's Training Plan - Push</h1>
+    </div>
+    <div class="content">
+        <div class="exercise-group">
+            <h2>Chest</h2>
+            <img src="pictures/chest/ButterflyWithHandle.gif" alt="Butterfly With Handle GIF">
+            <img src="pictures/chest/ButterflyWithoutHandle.gif" alt="Butterfly Without Handle GIF">
+            <img src="pictures/chest/BenchPressMachine.gif" alt="Bench Press Machine GIF">
+            <img src="pictures/chest/BenchPressShortDumbbells.gif" alt="Bench Press Short Dumbbells GIF">
+        </div>
+        <div class="exercise-group">
+            <h2>Shoulder</h2>
+            <img src="pictures/shoulder/ShoulderCableLateralRaise.gif" alt="Shoulder Cable Lateral Raise GIF">
+            <img src="pictures/shoulder/ShoulderDumbbellLateralRaise.gif" alt="Shoulder Dumbbell Lateral Raise GIF">
+            <img src="pictures/shoulder/RowingMachine.gif" alt="Rowing Machine GIF">
+        </div>
+        <div class="exercise-group">
+            <h2>Triceps</h2>
+            <img src="pictures/triceps/TricepsExtentions.gif" alt="Triceps Extensions GIF">
+            <img src="pictures/triceps/RopeOverheadTricepsExtension.gif" alt="Rope Overhead Triceps Extension GIF">
+            <img src="pictures/triceps/SkullCrusher.gif" alt="Skull Crusher GIF">
+        </div>
+    </div>
+</body>
+</html>
